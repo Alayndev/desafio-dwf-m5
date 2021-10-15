@@ -1,6 +1,6 @@
 import { initHomePage } from "./pages/home/home";
-import { initCountdownPage } from "./pages/countdown/countdown";
 import { initInstructionsPage } from "./pages/instructions/instructions";
+import { initCountdownPage } from "./pages/countdown/countdown";
 import { initResultPage } from "./pages/result/result";
 
 const routes = [
@@ -9,12 +9,12 @@ const routes = [
     page: initHomePage,
   },
   {
-    route: /\/desafio-dwf-m5\/countdown/,
-    page: initCountdownPage,
-  },
-  {
     route: /\/desafio-dwf-m5\/instructions/,
     page: initInstructionsPage,
+  },
+  {
+    route: /\/desafio-dwf-m5\/countdown/,
+    page: initCountdownPage,
   },
   {
     route: /\/desafio-dwf-m5\/result/,
