@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+
+:root {
+  --color-principal: yellow;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url(./images/background-img.png);
+  font-family: "Odibee Sans";
+}
+
+#root {
+  height: 100vh;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 75%;
+}

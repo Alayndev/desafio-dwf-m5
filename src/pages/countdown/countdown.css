@@ -1,0 +1,57 @@
+.game-countdown {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: flex-end;
+
+  height: inherit;
+}
+
+.circle-container {
+  margin: 95px auto;
+}
+
+.game-hands-show {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  align-items: flex-end;
+  justify-items: center;
+
+  overflow: hidden;
+}
+
+.circle {
+  width: 250px;
+  height: 250px;
+  border: solid 25px black;
+  border-radius: 50%;
+  border-left-color: rgba(0, 0, 0, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.3);
+  border-top-color: rgba(0, 0, 0, 0.3);
+  animation: spin 1s linear infinite;
+
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.countdown-counter {
+  font-size: 100px;
+}
+
+.computer-hand {
+  align-self: flex-start;
+  transform: rotate(180deg);
+}
+
+.user-hand {
+  transform: translateY(-25px);
+}

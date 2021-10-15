@@ -1,0 +1,22 @@
+.main-container {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.home__title {
+  font-size: 80px;
+  font-weight: 700;
+  color: #009048;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.hands-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  overflow: hidden;
+}
