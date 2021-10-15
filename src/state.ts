@@ -28,7 +28,7 @@ const state = {
       cb();
     }
 
-    localStorage.setItem("game-data", JSON.stringify(this.getState()));
+    localStorage.setItem("game-data", JSON.stringify(this.data));
   },
 
   initState() {
