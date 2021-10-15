@@ -32,6 +32,7 @@ const state = {
   },
 
   initState() {
+    localStorage.setItem("game-data", JSON.stringify(this.data));
     const localData = JSON.parse(localStorage.getItem("game-data"));
 
     this.setState(localData);
