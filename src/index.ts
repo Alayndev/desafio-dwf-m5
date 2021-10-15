@@ -6,9 +6,9 @@ import { initHandComp } from "./components/hand/hand";
 import { state } from "./state";
 
 function main() {
+  initRouter(document.querySelector("#root"));
   state.initState();
 
-  initRouter(document.querySelector("#root"));
 
   initButtonComp();
   initHandComp();
