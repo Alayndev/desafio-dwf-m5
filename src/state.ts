@@ -28,14 +28,15 @@ const state = {
       cb();
     }
 
-    localStorage.setItem("game-data", JSON.stringify(this.data));
+    localStorage.setItem("game-data", JSON.stringify(newState));
   },
 
   initState() {
-    localStorage.setItem("game-data", JSON.stringify(this.data));
     const localData = JSON.parse(localStorage.getItem("game-data"));
 
-    this.setState(localData);
+    if (localData) {
+      this.setState(localData);
+    }
   },
 
   subscribe(cb: (any) => any) {
